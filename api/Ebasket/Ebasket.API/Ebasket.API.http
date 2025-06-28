@@ -1,0 +1,6 @@
+@Ebasket.API_HostAddress = http://localhost:5064
+
+GET {{Ebasket.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
