@@ -1,0 +1,16 @@
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\bin\Debug\net8.0\Ebasket.Infrastructure.deps.json
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\bin\Debug\net8.0\Ebasket.Infrastructure.dll
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\bin\Debug\net8.0\Ebasket.Infrastructure.pdb
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\bin\Debug\net8.0\Ebasket.Core.dll
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\bin\Debug\net8.0\Ebasket.Core.pdb
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.csproj.AssemblyReference.cache
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.AssemblyInfoInputs.cache
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.AssemblyInfo.cs
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.sourcelink.json
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket..0F35212A.Up2Date
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.dll
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\refint\Ebasket.Infrastructure.dll
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.pdb
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\ref\Ebasket.Infrastructure.dll
