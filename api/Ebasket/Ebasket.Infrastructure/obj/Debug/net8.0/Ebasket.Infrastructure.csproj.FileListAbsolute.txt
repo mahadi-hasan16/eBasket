@@ -14,3 +14,5 @@ D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj
 D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\refint\Ebasket.Infrastructure.dll
 D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.pdb
 D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\ref\Ebasket.Infrastructure.dll
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\bin\Debug\net8.0\Ebasket.Infrastructure.runtimeconfig.json
+D:\Developent\Projects\E-Commerce\eBasket\api\Ebasket\Ebasket.Infrastructure\obj\Debug\net8.0\Ebasket.Infrastructure.genruntimeconfig.cache
