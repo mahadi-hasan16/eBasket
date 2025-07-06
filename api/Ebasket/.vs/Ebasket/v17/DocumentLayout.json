@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|solutionrelative:ebasket.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|solutionrelative:ebasket.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.infrastructure\\data\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|solutionrelative:ebasket.infrastructure\\data\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.infrastructure\\data\\storecontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|solutionrelative:ebasket.infrastructure\\data\\storecontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,27 +55,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Ebasket.API\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Ebasket.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAywEsAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Program.cs",
+              "RelativeDocumentMoniker": "Ebasket.API\\Program.cs",
+              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Program.cs",
+              "RelativeToolTip": "Ebasket.API\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:06:56.815Z",
+              "WhenOpened": "2025-07-06T18:00:25.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Ebasket.Infrastructure\\Data\\ProductRepository.cs",
-              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\ProductRepository.cs",
-              "RelativeToolTip": "Ebasket.Infrastructure\\Data\\ProductRepository.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAswCsAAAAyAAAAAAAAAA==",
+              "Title": "StoreContextSeed.cs",
+              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
+              "RelativeDocumentMoniker": "Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
+              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
+              "RelativeToolTip": "Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T14:20:55.319Z",
+              "WhenOpened": "2025-07-06T17:45:18.764Z",
               "EditorCaption": ""
             }
           ]
