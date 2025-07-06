@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|solutionrelative:ebasket.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.infrastructure\\data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|solutionrelative:ebasket.infrastructure\\data\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.infrastructure\\config\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|solutionrelative:ebasket.infrastructure\\config\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.infrastructure\\data\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A407333-F269-4DFD-9ADF-E6D41C678D32}|Ebasket.Infrastructure\\Ebasket.Infrastructure.csproj|solutionrelative:ebasket.infrastructure\\data\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -64,34 +60,23 @@
               "RelativeDocumentMoniker": "Ebasket.API\\Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Ebasket.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAywEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-04T17:32:20.574Z",
+              "WhenOpened": "2025-07-06T16:06:56.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductConfiguration.cs",
-              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Config\\ProductConfiguration.cs",
-              "RelativeDocumentMoniker": "Ebasket.Infrastructure\\Config\\ProductConfiguration.cs",
-              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Config\\ProductConfiguration.cs",
-              "RelativeToolTip": "Ebasket.Infrastructure\\Config\\ProductConfiguration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:31:50.411Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "StoreContext.cs",
-              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\StoreContext.cs",
-              "RelativeDocumentMoniker": "Ebasket.Infrastructure\\Data\\StoreContext.cs",
-              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\StoreContext.cs",
-              "RelativeToolTip": "Ebasket.Infrastructure\\Data\\StoreContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Ebasket.Infrastructure\\Data\\ProductRepository.cs",
+              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\ProductRepository.cs",
+              "RelativeToolTip": "Ebasket.Infrastructure\\Data\\ProductRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAswCsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T11:51:00.262Z"
+              "WhenOpened": "2025-07-06T14:20:55.319Z",
+              "EditorCaption": ""
             }
           ]
         }
