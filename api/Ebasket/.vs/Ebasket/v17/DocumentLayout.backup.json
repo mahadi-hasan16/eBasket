@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "Ebasket.API\\Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Ebasket.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA2wDYAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T17:32:20.574Z",
               "EditorCaption": ""
@@ -79,8 +79,7 @@
               "RelativeToolTip": "Ebasket.Infrastructure\\Config\\ProductConfiguration.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T15:31:50.411Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T15:31:50.411Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Ebasket.Infrastructure\\Data\\StoreContext.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T11:51:00.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T11:51:00.262Z"
             }
           ]
         }
