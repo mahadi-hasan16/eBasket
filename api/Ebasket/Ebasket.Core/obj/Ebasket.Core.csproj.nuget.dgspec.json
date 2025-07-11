@@ -10,14 +10,14 @@
         "projectUniqueName": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Core\\Ebasket.Core.csproj",
         "projectName": "Ebasket.Core",
         "projectPath": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Core\\Ebasket.Core.csproj",
-        "packagesPath": "C:\\Users\\mahad\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
         "outputPath": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
