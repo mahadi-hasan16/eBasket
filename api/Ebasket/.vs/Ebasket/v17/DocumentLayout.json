@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Migrations\\20250711181731_NewMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Ebasket.Infrastructure\\Migrations\\20250711181731_NewMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|solutionrelative:ebasket.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|d:\\developent\\projects\\e-commerce\\ebasket\\api\\ebasket\\ebasket.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D17AC8A-9E6C-4F2E-BF1F-3D413469859A}|Ebasket.API\\Ebasket.API.csproj|solutionrelative:ebasket.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,53 +55,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20250711181731_NewMigration.cs",
-              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Migrations\\20250711181731_NewMigration.cs",
-              "RelativeDocumentMoniker": "Ebasket.Infrastructure\\Migrations\\20250711181731_NewMigration.cs",
-              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Migrations\\20250711181731_NewMigration.cs",
-              "RelativeToolTip": "Ebasket.Infrastructure\\Migrations\\20250711181731_NewMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T18:17:31.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Ebasket.API\\appsettings.json",
-              "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\appsettings.json",
-              "RelativeToolTip": "Ebasket.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAB9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-11T18:11:25.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Program.cs",
               "RelativeDocumentMoniker": "Ebasket.API\\Program.cs",
               "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.API\\Program.cs",
               "RelativeToolTip": "Ebasket.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-06T18:00:25.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "StoreContextSeed.cs",
               "DocumentMoniker": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
               "RelativeDocumentMoniker": "Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
               "ToolTip": "D:\\Developent\\Projects\\E-Commerce\\eBasket\\api\\Ebasket\\Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
               "RelativeToolTip": "Ebasket.Infrastructure\\Data\\StoreContextSeed.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBYAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T17:45:18.764Z"
+              "WhenOpened": "2025-07-06T17:45:18.764Z",
+              "EditorCaption": ""
             }
           ]
         }

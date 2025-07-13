@@ -15,6 +15,8 @@ namespace Ebasket.Core.Interfaces
         void UpdateProduct(Product product);
         void DeleteProduct(Product prooduct);
         bool ProductExists(int id);
+        Task<IReadOnlyList<string>> GetBrandsAsync();
+        Task<IReadOnlyList<string>> GetTypesAsync();
         Task<bool> SaveChangesAsync();
     }
 }

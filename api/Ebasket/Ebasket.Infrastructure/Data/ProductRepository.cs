@@ -45,5 +45,19 @@ namespace Ebasket.Infrastructure.Data
         {
             storeContext.Entry(product).State = EntityState.Modified;
         }
+
+        public async Task<IReadOnlyList<string>> GetBrandsAsync()
+        {
+            return await storeContext.Products.Select(x => x.Brand)
+                .Distinct()
+                .ToListAsync();
+        }
+
+        public async Task<IReadOnlyList<string>> GetTypesAsync()
+        {
+            return await storeContext.Products.Select(x => x.Type)
+                .Distinct()
+                .ToListAsync();
+        }
     }
 }
