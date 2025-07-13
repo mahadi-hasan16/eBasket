@@ -11,9 +11,9 @@ namespace Ebasket.API.Controllers
     public class ProductsController(IProductRepository productRepository) : ControllerBase
     {
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts()
+        public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
         {
-            return Ok(await productRepository.GetProductsAsync());
+            return Ok(await productRepository.GetProductsAsync(brand, type, sort));
         }
 
         [HttpGet("{id:int}")]
@@ -65,6 +65,18 @@ namespace Ebasket.API.Controllers
                 return NoContent();
             }
             return BadRequest("Problem while deleting the product.");
+        }
+
+        [HttpGet("brands")]
+        public async Task<ActionResult<IReadOnlyList<string>>> GetBrands()
+        {
+            return Ok(await productRepository.GetBrandsAsync());
+        }
+
+        [HttpGet("types")]
+        public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
+        {
+            return Ok(await productRepository.GetTypesAsync());
         }
 
         private bool ProductExists(int id)
