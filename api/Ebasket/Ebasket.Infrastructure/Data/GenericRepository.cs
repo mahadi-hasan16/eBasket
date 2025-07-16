@@ -1,5 +1,6 @@
 ﻿using Ebasket.Core.Entities;
 using Ebasket.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,39 +11,40 @@ namespace Ebasket.Infrastructure.Data
 {
     public class GenericRepository<T>(StoreContext storeContext) : IGenericRepository<T> where T : BaseEntity
     {
-        void Add(T entity)
+        public void Add(T entity)
         {
-            storeContext.Add(entity);
+            storeContext.Set<T>().Add(entity);
         }
 
-        void Delete(T entity)
+        public void Remove(T entity)
         {
-            throw new NotImplementedException();
+            storeContext.Set<T>().Remove(entity);
         }
 
-        bool Exists(int id)
+        public bool Exists(int id)
         {
-            throw new NotImplementedException();
+            return storeContext.Set<T>().Any(x => x.Id == id);
         }
 
-        Task<T?> GetByIdAsync(int id)
+        public async Task<T?> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await storeContext.Set<T>().FindAsync(id);
         }
 
-        Task<IReadOnlyList<T>> ListAllAsync()
+        public async Task<IReadOnlyList<T>> ListAllAsync()
         {
-            throw new NotImplementedException();
+            return await storeContext.Set<T>().ToListAsync();
         }
 
-        Task<bool> SaveAllAsync()
+        public async Task<bool> SaveAllAsync()
         {
-            throw new NotImplementedException();
+            return await storeContext.SaveChangesAsync() > 0;
         }
 
-        void Update(T entity)
+        public void Update(T entity)
         {
-            throw new NotImplementedException();
+            storeContext.Set<T>().Attach(entity);   
+            storeContext.Entry(entity).State = EntityState.Modified;
         }
     }
 }

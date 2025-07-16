@@ -13,7 +13,7 @@ namespace Ebasket.Core.Interfaces
         Task<T?> GetByIdAsync(int id);
         void Add(T entity);
         void Update(T entity);
-        void Delete(T entity);
+        void Remove(T entity);
         Task<bool> SaveAllAsync();
         bool Exists(int id);
 
