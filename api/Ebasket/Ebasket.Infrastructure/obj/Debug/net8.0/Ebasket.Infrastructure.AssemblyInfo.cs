@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ebasket.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce68fba288ea239133324ebe54097a54ce9161a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea2a1c39c35eef2b1730440fdb502b6e8308ae49")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ebasket.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ebasket.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

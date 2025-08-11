@@ -12,5 +12,13 @@ namespace Ebasket.Core.Specifications
     {
         protected BaseSpecification() : this(null) { }
         public Expression<Func<T, bool>>? Criteria => criteria;
+        public Expression<Func<T, object>>? OrderBy { get; private set; }
+        public Expression<Func<T, object>>? OrderByDescending { get; private set; }
+
+        #region Class Methods
+        protected void AddOrderBy(Expression<Func<T, object>> orderBy) => OrderBy = orderBy;
+        protected void AddOrderByDescending(Expression<Func<T, object>> orderByDescending) => OrderBy = orderByDescending;
+
+        #endregion
     }
 }
