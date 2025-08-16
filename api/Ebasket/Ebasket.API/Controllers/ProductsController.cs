@@ -73,15 +73,15 @@ namespace Ebasket.API.Controllers
         [HttpGet("brands")]
         public async Task<ActionResult<IReadOnlyList<string>>> GetBrands()
         {
-            //TODO: Will be Implmented
-            return Ok();
+            var spec = new BrandListSpecification();
+            return Ok(await productRepository.ListAsync(spec));
         }
 
         [HttpGet("types")]
         public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
         {
-            //TODO: Will be Implemented
-            return Ok();
+            var spec = new TypeListSpecification();
+            return Ok(await productRepository.ListAsync(spec));
         }
 
         private bool ProductExists(int id)
