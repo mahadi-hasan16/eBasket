@@ -14,15 +14,12 @@ namespace Ebasket.Core.Specifications
         public Expression<Func<T, bool>>? Criteria => criteria;
         public Expression<Func<T, object>>? OrderBy { get; private set; }
         public Expression<Func<T, object>>? OrderByDescending { get; private set; }
-
         public bool IsDistinct { get; private set; }
 
         #region Class Methods
         protected void AddOrderBy(Expression<Func<T, object>> orderBy) => OrderBy = orderBy;
         protected void AddOrderByDescending(Expression<Func<T, object>> orderByDescending) => OrderBy = orderByDescending;
-
         protected void ApplyDistinct() => IsDistinct = true;
-
         #endregion
     }
 
