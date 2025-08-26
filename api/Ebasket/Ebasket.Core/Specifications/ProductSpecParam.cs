@@ -18,6 +18,7 @@ namespace Ebasket.Core.Specifications
         private int _pageSize = 6;
         private List<string> _brands = [];
         private List<string> _types = [];
+        private string? _search; 
         #endregion
 
         #region Public Properties
@@ -41,6 +42,12 @@ namespace Ebasket.Core.Specifications
             {
                 _types = value.SelectMany(x => x.Split(",", StringSplitOptions.RemoveEmptyEntries)).ToList();
             }
+        }
+
+        public string Search
+        {
+            get => _search ?? "";
+            set => _search = value.ToLower();
         }
         #endregion
     }
