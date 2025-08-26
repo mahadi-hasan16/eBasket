@@ -8,19 +8,32 @@ namespace Ebasket.Core.Specifications
 {
     public class ProductSpecParam
     {
-		private List<string> _brands = [];
+        #region Public Fields
+        public int PageIndex { get; set; } = 1;
+        public string? Sort { get; set; }
+        #endregion
 
-		public List<string> Brands
-		{
-			get => _brands;
-			set 
-			{
-				_brands = value.SelectMany(x => x.Split(",", StringSplitOptions.RemoveEmptyEntries)).ToList();
-			}
-		}
-
+        #region Private Fields
+        private const int maxPageSize = 50;
+        private int _pageSize = 6;
+        private List<string> _brands = [];
         private List<string> _types = [];
+        #endregion
 
+        #region Public Properties
+        public int PageSize
+        {
+            get => _pageSize;
+            set => _pageSize = (value > maxPageSize) ? maxPageSize : value;
+        }
+        public List<string> Brands
+        {
+            get => _brands;
+            set
+            {
+                _brands = value.SelectMany(x => x.Split(",", StringSplitOptions.RemoveEmptyEntries)).ToList();
+            }
+        }
         public List<string> Types
         {
             get => _types;
@@ -29,8 +42,6 @@ namespace Ebasket.Core.Specifications
                 _types = value.SelectMany(x => x.Split(",", StringSplitOptions.RemoveEmptyEntries)).ToList();
             }
         }
-
-        public string? Sort { get; set; }
-
+        #endregion
     }
 }

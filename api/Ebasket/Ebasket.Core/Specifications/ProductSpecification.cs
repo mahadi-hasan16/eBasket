@@ -13,6 +13,7 @@ namespace Ebasket.Core.Specifications
         (specParam.Brands.Count == 0 || specParam.Brands.Contains(x.Brand)) &&
         (specParam.Types.Count == 0 || specParam.Types.Contains(x.Type))) 
         {
+            ApplyPaging(specParam.PageSize*(specParam.PageIndex - 1), specParam.PageSize);
             switch (specParam.Sort)
             {
                 case "priceAsc":

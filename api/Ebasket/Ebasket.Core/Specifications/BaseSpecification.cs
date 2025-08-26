@@ -30,6 +30,15 @@ namespace Ebasket.Core.Specifications
             Take = take;
             IsPagingEnabled = true;
         }
+
+        public IQueryable<T> ApplyCriteria(IQueryable<T> query)
+        {
+            if(Criteria != null)
+            {
+                query = query.Where(Criteria);
+            }
+            return query;
+        }
         #endregion
     }
 
