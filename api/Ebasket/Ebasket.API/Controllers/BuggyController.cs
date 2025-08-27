@@ -1,4 +1,5 @@
-﻿using Ebasket.Core.Entities;
+﻿using Ebasket.API.DTOs;
+using Ebasket.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Ebasket.API.Controllers
@@ -30,7 +31,7 @@ namespace Ebasket.API.Controllers
         }
 
         [HttpPost("validationerror")]
-        public IActionResult GetValidationError(Product product)
+        public IActionResult GetValidationError(CreateProductDto product)
         {
             return Ok();
         }
