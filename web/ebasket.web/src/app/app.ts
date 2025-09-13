@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './layout/header/header';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../environments/environment.development';
+import { Product } from './shared/models/product';
+import { Pagination } from './shared/models/pagination';
 
 @Component({
   selector: 'app-root',
@@ -15,12 +17,12 @@ export class App implements OnInit {
   // private baseUrl = 'https://localhost:5065/api/';
   private baseUrl = environment.baseUrl;
   private http = inject(HttpClient);
-  products: any[] = [];
+  products: Product[] = [];
 
   ngOnInit(): void {
-    this.http.get<any>(this.baseUrl+'products')
+    this.http.get<Pagination<Product>>(this.baseUrl+'products')
     .subscribe({
-      next: (response: any) => {
+      next: response => {
         this.products = response.data;
         console.log(this.products);
       },
