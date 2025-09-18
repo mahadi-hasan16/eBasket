@@ -4,27 +4,23 @@ import { ShopService } from '../../core/services/shop-service';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { map, Observable } from 'rxjs';
+import { AsyncPipe } from '@angular/common';
+import { ProductItem } from "./product-item/product-item";
 
 @Component({
   selector: 'app-shop',
-  imports: [MatCardModule, MatButtonModule],
+  imports: [MatCardModule, MatButtonModule, AsyncPipe, ProductItem],
   templateUrl: './shop.html',
   styleUrl: './shop.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Shop implements OnInit {
   private shopService = inject(ShopService);
-  private cdr = inject(ChangeDetectorRef); // ← ADD THIS
-  products: Product[] = [];
+  products$!: Observable<Product[]>;
   ngOnInit(): void {
-    this.shopService.getProducts()
-    .subscribe({
-      next: response => {
-        this.products = response.data;
-        console.log(this.products);
-        this.cdr.detectChanges();
-      },
-      error: error => console.log(error)
-    })
+    this.products$ = this.shopService.getProducts().pipe(
+      map(response => response.data)
+    );
   }
 }
