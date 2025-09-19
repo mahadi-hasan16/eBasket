@@ -7,15 +7,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { map, Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 import { ProductItem } from "./product-item/product-item";
+import { MatDialog } from '@angular/material/dialog';
+import { FiltersDialog } from './filters-dialog/filters-dialog';
+import { MatIconModule } from "@angular/material/icon";
 
 @Component({
   selector: 'app-shop',
-  imports: [MatCardModule, MatButtonModule, AsyncPipe, ProductItem],
+  imports: [MatCardModule, MatButtonModule, AsyncPipe, ProductItem, MatIconModule],
   templateUrl: './shop.html',
   styleUrl: './shop.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class Shop implements OnInit {
+  private dialogService = inject(MatDialog);
   private shopService = inject(ShopService);
   products$!: Observable<Product[]>;
   ngOnInit(): void {
@@ -28,5 +32,9 @@ export class Shop implements OnInit {
     this.products$ = this.shopService.getProducts().pipe(
       map(response => response.data)
     );
+  }
+
+  openFilterDialog(){
+    const dialogRef = this.dialogService.open(FiltersDialog,{minWidth: '500px'});
   }
 }
