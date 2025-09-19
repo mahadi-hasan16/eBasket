@@ -19,6 +19,12 @@ export class Shop implements OnInit {
   private shopService = inject(ShopService);
   products$!: Observable<Product[]>;
   ngOnInit(): void {
+    this.initializeShop();
+  }
+
+  initializeShop(){
+    this.shopService.getBrands();
+    this.shopService.getTypes();
     this.products$ = this.shopService.getProducts().pipe(
       map(response => response.data)
     );
