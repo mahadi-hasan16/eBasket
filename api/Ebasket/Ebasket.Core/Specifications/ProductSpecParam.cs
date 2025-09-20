@@ -15,7 +15,7 @@ namespace Ebasket.Core.Specifications
 
         #region Private Fields
         private const int maxPageSize = 50;
-        private int _pageSize = 6;
+        private int _pageSize = 20;
         private List<string> _brands = [];
         private List<string> _types = [];
         private string? _search; 
