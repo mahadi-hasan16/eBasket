@@ -42,7 +42,7 @@ namespace Ebasket.Core.Specifications
         #endregion
     }
 
-    public class BaseSpecification<T, TResult> : BaseSpecification<T>
+    public class BaseSpecification<T, TResult> : BaseSpecification<T>, ISpecification<T, TResult>
     {
         public Expression<Func<T, TResult>>? Select { get; private set; }
 

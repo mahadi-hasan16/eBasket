@@ -12,7 +12,7 @@ namespace Ebasket.Core.Specifications
         public ProductSpecification(ProductSpecParam specParam)
         {
             AddCriteria(x =>
-        (string.IsNullOrEmpty(specParam.Search) || (x.Name.ToLower().Contains(specParam.Search)) &&
+        ((string.IsNullOrEmpty(specParam.Search) || (x.Name.ToLower().Contains(specParam.Search))) &&
         (specParam.Brands.Count == 0 || specParam.Brands.Contains(x.Brand)) &&
         (specParam.Types.Count == 0 || specParam.Types.Contains(x.Type))));
 
