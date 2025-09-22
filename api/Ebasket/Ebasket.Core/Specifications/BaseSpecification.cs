@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace Ebasket.Core.Specifications
 {
-    public class BaseSpecification<T>(Expression<Func<T, bool>>? criteria) : ISpecification<T>
+    public class BaseSpecification<T>: ISpecification<T>
     {
-        protected BaseSpecification() : this(null) { }
-        public Expression<Func<T, bool>>? Criteria => criteria;
+        public Expression<Func<T, bool>>? Criteria { get; private set; }
         public Expression<Func<T, object>>? OrderBy { get; private set; }
         public Expression<Func<T, object>>? OrderByDescending { get; private set; }
         public bool IsDistinct { get; private set; }
@@ -20,6 +19,7 @@ namespace Ebasket.Core.Specifications
         public bool IsPagingEnabled {  get; private set; }
 
         #region Class Methods
+        protected void AddCriteria(Expression<Func<T, bool>>? criteria) => Criteria = criteria;
         protected void AddOrderBy(Expression<Func<T, object>> orderBy) => OrderBy = orderBy;
         protected void AddOrderByDescending(Expression<Func<T, object>> orderByDescending) => OrderBy = orderByDescending;
         protected void ApplyDistinct() => IsDistinct = true;
@@ -42,9 +42,8 @@ namespace Ebasket.Core.Specifications
         #endregion
     }
 
-    public class BaseSpecification<T, TResult>(Expression<Func<T, bool>> criteria) : BaseSpecification<T>(criteria), ISpecification<T, TResult>
+    public class BaseSpecification<T, TResult> : BaseSpecification<T>
     {
-        protected BaseSpecification() : this(null!){}
         public Expression<Func<T, TResult>>? Select { get; private set; }
 
         #region Class Methods

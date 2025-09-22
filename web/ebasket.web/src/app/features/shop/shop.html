@@ -7,12 +7,10 @@
   </div>
 
   <div class="grid grid-cols-5 gap-4">
-    @if (products$ | async; as products) {
     @for (product of products; track product.id) {
     <app-product-item [product]="product"></app-product-item>
-    }
-    } @else {
-    <p>Loading products...</p>
+    } @empty {
+    <li>There are no items.</li>
     }
   </div>
 </div>

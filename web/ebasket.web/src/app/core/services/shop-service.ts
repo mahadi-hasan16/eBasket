@@ -1,5 +1,5 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { ChangeDetectorRef, inject, Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
 import { Pagination } from '../../shared/models/pagination';
 import { Product } from '../../shared/models/product';
@@ -17,14 +17,14 @@ export class ShopService {
   getProducts(brands?: string[], types?: string[]) {
     let params = new HttpParams();
     if (brands && brands.length > 0) {
-      params.append('brands', brands.join(','));
+      params = params.append('brands', brands.join(','));
     }
 
     if (types && types.length > 0) {
-      params.append('types', types.join(','));
+      params = params.append('types', types.join(','));
     }
 
-    params.append('pageSize', 20);
+    params = params.append('pageSize', 20);
 
     return this.http.get<Pagination<Product>>(this.baseUrl + 'products', { params });
   }
