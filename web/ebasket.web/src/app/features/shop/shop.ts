@@ -1,18 +1,26 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { Product } from '../../shared/models/product';
 import { ShopService } from '../../core/services/shop-service';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { map, Observable } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
 import { ProductItem } from "./product-item/product-item";
 import { MatDialog } from '@angular/material/dialog';
 import { FiltersDialog } from './filters-dialog/filters-dialog';
 import { MatIconModule } from "@angular/material/icon";
+import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule, MatListOption, MatSelectionList, MatSelectionListChange } from '@angular/material/list';
 
 @Component({
   selector: 'app-shop',
-  imports: [MatCardModule, MatButtonModule, AsyncPipe, ProductItem, MatIconModule],
+  imports: [
+    MatCardModule,
+    MatButtonModule,
+    ProductItem,
+    MatIconModule,
+    MatMenuModule,
+    MatSelectionList,
+    MatListOption
+  ],
   templateUrl: './shop.html',
   styleUrl: './shop.css'
 })
@@ -23,6 +31,12 @@ export class Shop implements OnInit {
   products: Product[] = [];
   selectedBrands: string[] = [];
   selectedTypes: string[] = [];
+  selectedSort: string = 'name';
+  sortOptions = [
+    { name: 'Alphabetical', value: 'name' },
+    { name: 'Price: Low - High', value: 'priceAsc' },
+    { name: 'Price: High - Low', value: 'priceDesc' },
+  ]
   ngOnInit(): void {
     this.initializeShop();
   }
@@ -30,7 +44,11 @@ export class Shop implements OnInit {
   initializeShop() {
     this.shopService.getBrands();
     this.shopService.getTypes();
-    this.shopService.getProducts()
+    this.getProducts();
+  }
+
+  getProducts() {
+    this.shopService.getProducts(this.selectedBrands, this.selectedTypes, this.selectedSort)
       .subscribe({
         next: response => {
           this.products = response.data;
@@ -38,6 +56,15 @@ export class Shop implements OnInit {
           this.changeDetectionRef.detectChanges();
         }
       })
+  }
+
+  onSortChange(event: MatSelectionListChange) {
+    const selectedOption = event.options[0];
+    if (selectedOption) {
+      this.selectedSort = selectedOption.value;
+      console.log(this.selectedSort);
+      this.getProducts();
+    }
   }
 
   openFilterDialog() {
@@ -63,14 +90,7 @@ export class Shop implements OnInit {
               console.log(this.selectedBrands);
               console.log(this.selectedTypes);
 
-              this.shopService.getProducts(this.selectedBrands, this.selectedTypes)
-                .subscribe({
-                  next: response => {
-                    this.products = response.data;
-                    console.log(this.products);
-                    this.changeDetectionRef.detectChanges();
-                  }
-                })
+              this.getProducts();
             }
           }
         }
