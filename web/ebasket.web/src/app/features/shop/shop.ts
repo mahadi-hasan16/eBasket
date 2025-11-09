@@ -10,6 +10,8 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule, MatListOption, MatSelectionList, MatSelectionListChange } from '@angular/material/list';
 import { ShopParams } from '../../shared/models/shopParams';
+import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
+import { Pagination } from '../../shared/models/pagination';
 
 @Component({
   selector: 'app-shop',
@@ -20,7 +22,8 @@ import { ShopParams } from '../../shared/models/shopParams';
     MatIconModule,
     MatMenuModule,
     MatSelectionList,
-    MatListOption
+    MatListOption,
+    MatPaginatorModule
   ],
   templateUrl: './shop.html',
   styleUrl: './shop.css'
@@ -29,7 +32,7 @@ export class Shop implements OnInit {
   private dialogService = inject(MatDialog);
   private shopService = inject(ShopService);
   private changeDetectionRef = inject(ChangeDetectorRef);
-  products: Product[] = [];
+  products?: Pagination<Product>;
   sortOptions = [
     { name: 'Alphabetical', value: 'name' },
     { name: 'Price: Low - High', value: 'priceAsc' },
@@ -52,7 +55,7 @@ export class Shop implements OnInit {
     this.shopService.getProducts(this.shopParams)
       .subscribe({
         next: response => {
-          this.products = response.data;
+          this.products = response;
           //console.log(this.products);
           this.changeDetectionRef.detectChanges();
         }
@@ -63,6 +66,7 @@ export class Shop implements OnInit {
     const selectedOption = event.options[0];
     if (selectedOption) {
       this.shopParams.sort = selectedOption.value;
+      this.shopParams.pageNumber = 1;
       this.getProducts();
     }
   }
@@ -86,6 +90,7 @@ export class Shop implements OnInit {
               console.log(result);
               this.shopParams.brands = result.selectedBrands;
               this.shopParams.types = result.selectedTypes;
+              this.shopParams.pageNumber = 1;
 
               this.getProducts();
             }
@@ -93,4 +98,11 @@ export class Shop implements OnInit {
         }
       );
   }
+
+  handlePageEvent(event: PageEvent) {
+    this.shopParams.pageNumber = event.pageIndex + 1;
+    this.shopParams.pageSize = event.pageSize;
+    this.getProducts();
+  }
+
 }
