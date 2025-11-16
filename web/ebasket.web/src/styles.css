@@ -1,15 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 
-.custom-theme{
-    .mdc-button, .mdc-raised-button, .mdc-outlined-button{
+.custom-theme {
+
+    .mdc-button,
+    .mdc-raised-button,
+    .mdc-outlined-button {
         @apply rounded-md
     }
 }
 
-.container{
+.container {
     @apply mx-auto max-w-screen-2xl
+}
+
+a.active {
+    color: #7d00fa;
+    font-weight: bold;
 }
