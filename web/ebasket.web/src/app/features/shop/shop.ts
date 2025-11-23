@@ -13,6 +13,8 @@ import { ShopParams } from '../../shared/models/shopParams';
 import { MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { Pagination } from '../../shared/models/pagination';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -25,12 +27,15 @@ import { FormsModule } from '@angular/forms';
     MatSelectionList,
     MatListOption,
     MatPaginatorModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   templateUrl: './shop.html',
   styleUrl: './shop.css'
 })
 export class Shop implements OnInit {
+  private router = inject(Router);
+
   private dialogService = inject(MatDialog);
   private shopService = inject(ShopService);
   private changeDetectionRef = inject(ChangeDetectorRef);
@@ -60,6 +65,17 @@ export class Shop implements OnInit {
           this.products = response;
           //console.log(this.products);
           this.changeDetectionRef.detectChanges();
+          console.log(this.products);
+          if (this.products?.count !== 0) {
+            const filterElement = document.getElementById('shopFilter');
+            if (filterElement) {
+              filterElement.style.display = 'flex';
+            }
+          }
+        },
+        error: error => {
+          console.log(error.message);
+          this.router.navigate(['/server-error']);
         }
       })
   }

@@ -25,12 +25,11 @@ export class ShopService {
       params = params.append('types', shopParams.types.join(','));
     }
 
-    if(shopParams.sort){
+    if (shopParams.sort) {
       params = params.append('sort', shopParams.sort);
     }
 
-    if(shopParams.search)
-    {
+    if (shopParams.search) {
       params = params.append('search', shopParams.search);
     }
 
@@ -40,8 +39,7 @@ export class ShopService {
     return this.http.get<Pagination<Product>>(this.baseUrl + 'products', { params });
   }
 
-  getProduct(id: number)
-  {
+  getProduct(id: number) {
     return this.http.get<Product>(this.baseUrl + 'products/' + id);
   }
 
@@ -50,7 +48,10 @@ export class ShopService {
     return this.http.get<string[]>(this.baseUrl + 'products/brands')
       .subscribe(
         {
-          next: respnse => this.brands = respnse
+          next: respnse => this.brands = respnse,
+          error: error => {
+            console.log(error.message);
+          }
         }
       )
   }
@@ -60,7 +61,10 @@ export class ShopService {
     return this.http.get<string[]>(this.baseUrl + 'products/types')
       .subscribe(
         {
-          next: respnse => this.types = respnse
+          next: respnse => this.types = respnse,
+          error: error => {
+            console.log(error.message);
+          }
         }
       )
   }
