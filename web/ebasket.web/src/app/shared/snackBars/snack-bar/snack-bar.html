@@ -1,0 +1,11 @@
+<div class="flex justify-between w-2xl">
+    <span class="gap-2 mt-auto">
+        <mat-icon>{{_snackBarData.icon}}</mat-icon>
+    </span>
+    <span matSnackBarLabel>{{_snackBarData.message}}</span>
+    <span matSnackBarAction>
+        <button matButton (click)="_snackBarRef.dismissWithAction()">
+            <mat-icon>close_small</mat-icon>
+        </button>
+    </span>
+</div>
