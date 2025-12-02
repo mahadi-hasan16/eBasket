@@ -22,20 +22,20 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
             throw modelStateErrors.flat();
           }
           else {
-            snackBar.openSnackBar(err.error.title || err.error);
+            snackBar.error(err.error.title || err.error);
           }
         }
 
         if (err.status === 401) {
-          snackBar.openSnackBar(err.error.title || err.error);
+          snackBar.error(err.error.title || err.error);
         }
 
         if (err.status === 404) {
-          snackBar.openSnackBar(err.error.title || err.error);
+          snackBar.error(err.error.title || err.error);
         }
 
         if (err.status === 500) {
-          snackBar.openSnackBar(err.error.title || err.error);
+          snackBar.error(err.error.title || err.error);
         }
 
         return throwError(() => err);

@@ -1,11 +1,25 @@
-<div class="flex justify-between w-2xl">
-    <span class="gap-2 mt-auto">
-        <mat-icon>{{_snackBarData.icon}}</mat-icon>
-    </span>
-    <span matSnackBarLabel>{{_snackBarData.message}}</span>
-    <span matSnackBarAction>
-        <button matButton (click)="_snackBarRef.dismissWithAction()">
-            <mat-icon>close_small</mat-icon>
-        </button>
-    </span>
+<div class="root">
+    <div class="flex items-center justify-between max-w-2xl p-4 rounded-lg shadow-lg 
+            {{getBackgroundClass()}}">
+
+        <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-10 h-10 rounded-full
+                    {{getIconContainerClass()}}">
+                <mat-icon class="text-white text-lg flex items-center justify-center leading-none">
+                    {{getIcon()}}
+                </mat-icon>
+            </div>
+
+            <span matSnackBarLabel class="text-sm font-medium {{getTextColorClass()}}">
+                {{_snackBarData.message}}
+            </span>
+        </div>
+
+        <div class="flex items-center ml-4">
+            <button mat-icon-button (click)="_snackBarRef.dismissWithAction()"
+                class="!p-1 hover:opacity-70 rounded-full" aria-label="Close notification">
+                <mat-icon class="{{getCloseIconColorClass()}} !text-xl">close</mat-icon>
+            </button>
+        </div>
+    </div>
 </div>
